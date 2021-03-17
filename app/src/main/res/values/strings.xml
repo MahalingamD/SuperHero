@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">SuperHero</string>
+    <string name="txt_character_id">You can find the character ids</string>
+    <string name="super_hero_link">"<a href='https://superheroapi.com/ids.html'> Here </a></string>
+    <string name="alert_check_internet">Please check you internet connection</string>
+    <string name="txt_biography">Biography</string>
+    <string name="res_string">https://superheroapi.com/ids.html</string>
+    <string name="txt_work">Work</string>
+    <string name="connection">Connection</string>
+    <string name="txt_powerstats">Powerstats</string>
+    <string name="txt_appearance">Appearance</string>
+    <string name="txt_gender">Gender</string>
+    <string name="txt_full_name">Full-name</string>
+    <string name="txt_alter_egos">Alter-egos</string>
+    <string name="txt_place_of_birth">Place-of-birth</string>
+    <string name="txt_first_appearance">First-appearance</string>
+    <string name="txt_publisher">publisher</string>
+    <string name="txt_alignment">Alignment</string>
+    <string name="txt_race">race</string>
+    <string name="txt_height">Height</string>
+    <string name="txt_weight">Weight</string>
+    <string name="txt_eye_color">Eye-color</string>
+    <string name="txt_hair_color">Hair-color</string>
+    <string name="txt_intelligence">Intelligence</string>
+    <string name="txt_strength">Strength</string>
+    <string name="txt_speed">Speed</string>
+    <string name="txt_durability">Durability</string>
+    <string name="txt_power">Power</string>
+    <string name="txt_combat">Combat</string>
+    <string name="txt_group_affiliation">Group-affiliation</string>
+    <string name="txt_relatives">Relatives</string>
+    <string name="txt_occupation">Occupation</string>
+    <string name="txt_base">Base</string>
+    <string name="txt_no_superhero_found">No superhero found</string>
+</resources>

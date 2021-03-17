@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_super_hero_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_img_superhero"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintDimensionRatio="H,2:2"
+                app:layout_constraintEnd_toEndOf="@+id/txt_super_hero_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_super_hero_name"
+                app:layout_constraintWidth_percent=".6">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_superhero"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/ic_no_image" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <include
+                android:id="@+id/bio_layout"
+                layout="@layout/inflate_biography_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/card_img_superhero" />
+
+
+            <include
+                android:id="@+id/appear_layout"
+                layout="@layout/inflate_apperance_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/bio_layout" />
+
+
+            <include
+                android:id="@+id/power_layout"
+                layout="@layout/inflate_power_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/appear_layout" />
+
+
+            <include
+                android:id="@+id/connection_layout"
+                layout="@layout/inflate_connection_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/power_layout" />
+
+
+            <include
+                android:id="@+id/work_layout"
+                layout="@layout/inflate_work_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/connection_layout" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
